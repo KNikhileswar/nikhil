@@ -26,7 +26,7 @@ function clearText(field)
 <script>
 
  var dataLayer = dataLayer || {};
-   dataLayer = {
+   dataLayer.push = ({
     page: {
         pageInfo: {
             pageID: "home-page",
@@ -61,7 +61,8 @@ function clearText(field)
         },
 
     }
-  };
+  });
+	dataLayer = { ...dataLayer};
 
 </script>
 <!--
