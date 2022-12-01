@@ -50,8 +50,9 @@ $(document).ready(function() {
 
 <script>
 
- var digitalData = digitalData || {};
-   digitalData = {
+var dataLayer
+ window.dataLayer = window.dataLayer || {};
+   dataLayer.push ({
     page: {
         pageInfo: {
             pageID: "Gallery-page",
@@ -66,7 +67,7 @@ $(document).ready(function() {
             subCategory: "Sub-category Gallery"
         },
     }
-  };
+  });
 </script>
 
 
