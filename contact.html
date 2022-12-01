@@ -25,8 +25,9 @@ function clearText(field)
 
 <script>
 
- var digitalData = digitalData || {};
-   digitalData = {
+var dataLayer
+ window.dataLayer = window.dataLayer || {};
+   dataLayer.push ({
     page: {
         pageInfo: {
             pageID: "contact-page",
@@ -41,7 +42,7 @@ function clearText(field)
             subCategory: "Sub-category contact"
         },
     }
-  };
+  });
 </script>
 <script>
 function validateForm() {
